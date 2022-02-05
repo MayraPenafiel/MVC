@@ -8,5 +8,10 @@ public interface IEmpleadoService {
 	
 	public List<Empleado> findAll();
 	
-
+	public Empleado save(Empleado empleado);
+	
+	public Empleado findById(Long id);
+	
+	public void delete(Long id);
+	
 }

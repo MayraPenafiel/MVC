@@ -3,3 +3,12 @@ insert into clientes(id,nombre,apellido,email,create_at) values (2,'Patricia','T
 insert into clientes(id,nombre,apellido,email,create_at) values (3,'Luis','Villa','villa@hotmail.com','1976-01-04');
 insert into clientes(id,nombre,apellido,email,create_at) values (4,'Tomas','Erazo','tomas@hotmail.com','1964-01-04');
 insert into clientes(id,nombre,apellido,email,create_at) values (5,'Daniela','Rosero','danny@hotmail.com','1992-01-04');
+insert into empleados(id,ci,nombre,apellido,f_nacimiento,direccion,sexo,salario,super_ci,dno) values (1,'0123456789','Dylang','Wang','1998-12-20','Hong kong','M','5200','1245','5421');
+insert into empleados(id,ci,nombre,apellido,f_nacimiento,direccion,sexo,salario,super_ci,dno) values (2,'9876543210','Jay','Park','1988-05-12','Seul','M',15200,1520,0251);
+insert into empleados(id,ci,nombre,apellido,f_nacimiento,direccion,sexo,salario,super_ci,dno) values (3,'7418529630','Irene','Kim','1990-09-03','Seul','F',18500,2640,0462);
+insert into empleados(id,ci,nombre,apellido,f_nacimiento,direccion,sexo,salario,super_ci,dno) values (4,'9638527410','Hyuna','Kim','1989-11-12','Paris','F',8520,2058,2508);
+insert into productos(id,nombre,descripcion,costo,stock) values(1,'Cafe','Importado',5,10);
+insert into productos(id,nombre,descripcion,costo,stock) values(2,'Arroz','Arroba',14,3);
+insert into productos(id,nombre,descripcion,costo,stock) values(3,'Tomate','2kl',1,8);
+insert into vendedores(id,nombre,apellidos,direccion,telefono,email) values(1,'Elias','King','Olanda','07418529','eliask@hotmail.com');
+insert into vendedores(id,nombre,apellidos,direccion,telefono,email) values(2,'Luisa','Park','Colombia','07894565','pkluisa@naver.com');

@@ -5,6 +5,8 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -20,6 +22,10 @@ public class Empleado implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(name="ci")
 	private String ci;
 	
 	@Column(name="nombre")
@@ -45,7 +51,7 @@ public class Empleado implements Serializable {
 	private int superci;
 	
 	@Column(name="dno")
-	private int DNO;
+	private int dno;
 
 	public String getNombre() {
 		return nombre;
@@ -111,12 +117,12 @@ public class Empleado implements Serializable {
 		this.superci = superci;
 	}
 
-	public int getDNO() {
-		return DNO;
+	public int getDno() {
+		return dno;
 	}
 
-	public void setDNO(int dNO) {
-		DNO = dNO;
+	public void setDno(int dno) {
+		this.dno = dno;
 	}
 
 }
